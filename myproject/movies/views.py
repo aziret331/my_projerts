@@ -3,25 +3,21 @@ from django.shortcuts import render
 def index(request):
     movies = [
     {
-        'title': 'интерстеллар',
-        'description': 'Фильм о путешествии через червоточину в поисках нового дома для человечества.',
+        'title':  'Интерстеллар',
+        'description': 'Фильм о путешествии через космос и времени, чтобы спасти человечество.',
         'poster': 'interstellar.jpg',
-        'trailer': 'https://www.youtube.com/watch?v=zSWdZVtXT7E'
+        'trailer': 'https://www.youtube.com/embed/zSWdZVtXT7E',
     },
     {
-        'title': 'начало',
-        'description': 'Фильм o воров, которые проникают в сны людей, чтобы украсть их секреты.',
+        'title':  'Начало',
+        'description': 'Фильм о группе специалистов, которые внедряются в сны людей для кражи или внедрения идей.',
         'poster': 'inception.jpg',
-        'trailer': 'https://www.youtube.com/watch?v=YoHD9XEInc0'
+        'trailer': 'https://www.youtube.com/embed/YoHD9XEInc0',
     },
     {
-        'title': 'Бегущий по лезвию 2049',
-        'description': 'История о новом бегущем по лезвию, который раскрывает давно скрытую тайну.',
+        'title':  'Бегущий по лезвию 2049',
+        'description': 'Фильм о будущем, где охотник за репликантами обнаруживает секрет, который может изменить общество.',
         'poster': 'Blade_runner.jpg',
-        'trailer': 'https://www.youtube.com/watch?v=gCcx85zbxz4'
-    }
+        'trailer': 'https://www.youtube.com/embed/gCcx85zbxz4',
+    },
     ]
-
-
-    return render(request, 'movies/index.html', {'movies': movies})
-    
